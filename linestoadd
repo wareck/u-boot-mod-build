@@ -1,0 +1,8 @@
+#
+export BUILD_TOPDIR=$(PWD)
+export STAGING_DIR=$(BUILD_TOPDIR)/tmp
+
+export MAKECMD=make --silent ARCH=mips CROSS_COMPILE=mips-openwrt-linux-uclibc-
+export PATH:=$(BUILD_TOPDIR)/toolchain/bin/:$(PATH)
+
+#
